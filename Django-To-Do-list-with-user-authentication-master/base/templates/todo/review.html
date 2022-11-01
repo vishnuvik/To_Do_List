@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ToDo App</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'todo/bs/css/flatly.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'todo/review.css' %}" />
+		
+	</head>
+    <script src="https://use.fontawesome.com/a6f0361695.js"></script>
+
+
+    
+    
+    <body>
+        <video id ="background-video" autoplay loop muted plays-inline class = "back-video">
+            <source src = "{% static 'video/elite.mp4' %}">
+        </video>
+        
+
+        <div class="container-fluid" id="wrapper">
+        <div class="col-lg-12 text-center" id="fir">
+            <p style="font-family:Cursive " >
+            WE APPRECIATE YOUR REVIEW!
+            </p>
+           </div>
+        
+        
+           <div class="col-lg-12 text-center" id="fire">
+            <p style="font-family:Cursive " >
+            Your review will help us to improve our web hosting quality products, and customer services.
+            </p>
+           </div>
+           
+        
+			
+			<div class="col-lg-12 text-center" id="fires">
+                <p style="font-family:Cursive " >
+                PLEASE PLACE YOUR FEEDBACK!!!
+                </p>
+            </div>
+
+            
+
+
+            <form id="feedback" action="{% url 'addReview' %}" method="POST">
+              {% csrf_token %}
+              <div  id="sep" class="form-group">
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
+                      <div  id="seps">
+                        
+                      <label for = "Name">Your Name </label>
+                      </div>
+                      <input  name="Name" placeholder="Enter Your Name" class="form-control"  type="text" value="{{Name}}">
+                  </div>
+
+
+                <div id="seperate" class="input-group">
+                      <span class="input-group-addon"><i class="	fa fa-send"></i></span>
+                      <div id="seperates">
+                        
+                      <label for = "Feedback"> UR Opinion</label>
+                    </div>
+                      <input  name="Feedback" placeholder="Enter Your Feedback" class="form-control"  type="text" value="{{Feedback}}">
+                  </div>
+                  <span class="input-group-btn">
+                      <button type="submit" class="btn btn-primary" id="add-btn">Submit</button>
+                  </span>
+              </div>
+            </form>
+              
+              
+              
+            </div>
+    </body>
+</html>

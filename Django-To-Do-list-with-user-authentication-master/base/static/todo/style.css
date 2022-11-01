@@ -1,0 +1,170 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#image{
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+/* ogo */
+
+    
+
+/* navbar */
+#navbar
+{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #60b9e9;
+    display: grid;
+    place-items: center;
+
+}
+#navbar:hover 
+{
+    color: #66a7ba;
+    
+}
+#navbar ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 20px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: rgb(9, 8, 11);
+}
+#navbar ul li a:hover
+{
+    color: #3d0cec;
+}
+/* login button */
+#navbar ul #login
+{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    display: grid;
+    place-items: center;
+    background: #09090a;
+    border-radius: 10px 20px;
+}
+#navbar ul #login a
+{
+    color: #ffffff;
+}
+#navbar ul #login a:hover
+{
+    color: rgb(18, 18, 227);
+    transition: 0.5s;
+}
+#navbar ul #login:hover
+{
+    background: rgb(10, 5, 5);
+}
+/* image */
+
+
+
+
+
+/* content */
+#content
+{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 996;
+}
+#content h2
+{
+    font-size: 210px;
+    color: #380df5;
+}
+#content:hover h2
+{
+    color: rgb(3, 3, 4);
+    transition: 0.5s;
+}
+#content h4
+{
+    font-size: 70px;
+    color: rgb(17, 16, 22);
+}
+#content:hover h4
+{
+    color: #2310f2;
+    transition: 0.5s;
+}
+/* icons */
+#icons
+{
+    height: 500px;
+    width: 65px;
+    position: absolute;
+    left: 0;
+    bottom: calc(50% - 300px);
+    background: #0e0418;
+    border-radius: 0 60px 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 998;
+}
+#icons:hover
+{
+    background: #000;
+}
+#icons a
+{
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    font-size: 23px;
+    color: #e9ebeb;
+    display: grid;
+    place-items: center;
+    margin: 30px 0
+}
+#icons a:hover
+{
+    color: #2a11e2;
+}
+/* pagination */
+
+/* lines */
+#line1,#line2
+{
+    height: 150px;
+    width: 60px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: skewX(-45deg);
+}
+#line2
+{
+    height: 60px;
+    left: 26%;
+}
